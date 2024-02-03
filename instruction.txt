@@ -2,3 +2,10 @@
 2. Initialize repo
 3. Then import github repo
 4. Then push to github repo
+
+
+Enqueueing: When you enqueue an element, you add it to the rear of the queue. The rear pointer keeps track of the position where the next element will be enqueued. After enqueuing an element, the rear pointer is incremented to point to the next available position in the circular array. If the rear pointer reaches the end of the array, it wraps around to the beginning, effectively creating a circular queue. This means that even though elements may be dequeued later, the capacity of the array remains constant, and elements can still be enqueued until the queue is full.
+
+Dequeueing: When you dequeue an element, you remove it from the front of the queue. The front pointer keeps track of the position of the next element to be dequeued. After dequeuing an element, the front pointer is incremented to point to the next element in the queue. Similar to the rear pointer, if the front pointer reaches the end of the array, it wraps around to the beginning. The element itself is not physically removed from the array; rather, its position in the circular array is marked as available for future enqueue operations. This is why the capacity of the array remains constant even after dequeuing elements.
+
+In summary, the capacity of the array remains constant throughout the enqueueing and dequeueing operations. Elements are enqueued to the rear of the queue and dequeued from the front, while the pointers (front and rear) manage the positions of elements in the circular array. This allows the queue to operate efficiently without needing to resize the array or physically remove elements.

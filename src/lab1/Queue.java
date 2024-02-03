@@ -98,31 +98,26 @@ public class Queue<T> {
         integerQueue.enqueue(1);
         integerQueue.enqueue(2);
         integerQueue.enqueue(3);
-
-        integerQueue.printQueue(); // Output: Queue: 1 2 3
-
-        System.out.println("Peek: " + integerQueue.peek()); // Output: Peek: 1
-
-        System.out.println("Dequeued: " + integerQueue.dequeue()); // Output: Dequeued: 1
-        System.out.println("Dequeued: " + integerQueue.dequeue());
-        
         integerQueue.enqueue(4);
         integerQueue.enqueue(5);
+        
+        integerQueue.printQueue();
+        
+        integerQueue.dequeue();
+        integerQueue.dequeue();
+        integerQueue.dequeue();
+        integerQueue.dequeue();
+
+        integerQueue.printQueue();
+        
         integerQueue.enqueue(6);
         integerQueue.enqueue(7);
-        integerQueue.enqueue(8);
-
-
-        integerQueue.printQueue(); // Output: Queue: 2 3
         
-        System.out.println("Peek: " + integerQueue.peek()); 
+        integerQueue.printQueue();
+
+
         
 
-        Queue<String> stringQueue = new Queue<>(3);
-        stringQueue.enqueue("Hello");
-        stringQueue.enqueue("World");
-
-        stringQueue.printQueue(); // Output: Queue: Hello World
     }
 }
 
