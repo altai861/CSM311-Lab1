@@ -1,0 +1,4 @@
+1. Create the project, 
+2. Initialize repo
+3. Then import github repo
+4. Then push to github repo
